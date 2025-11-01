@@ -1,0 +1,30 @@
+{
+  "navigation": {
+    "home": "Home",
+    "projects": "Projects",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "cta": {
+    "requestQuote": "Request a consultation",
+    "viewProject": "View project"
+  },
+  "footer": {
+    "rights": "© {{year}} Siska Construction Inc. All rights reserved.",
+    "crafted": "Website crafted by"
+  },
+  "contact": {
+    "title": "Contact",
+    "phone": "Phone",
+    "email": "Email"
+  },
+  "language": {
+    "label": "Language",
+    "cs": "Česky",
+    "en": "English"
+  },
+  "breadcrumb": {
+    "projects": "Projects",
+    "back": "Back to all projects"
+  }
+}

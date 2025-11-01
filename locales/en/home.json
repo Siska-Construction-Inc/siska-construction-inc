@@ -1,0 +1,42 @@
+{
+  "hero": {
+    "badge": "Design-led renovations",
+    "title": "Modern conversions for apartments and houses",
+    "subtitle": "Siska Construction delivers thoughtful reconstructions that balance refined aesthetics with resilient detail, managing every phase from concept to final styling.",
+    "ctaPrimary": "View projects",
+    "ctaSecondary": "Contact us",
+    "meta": {
+      "projects": "20+ bespoke reconstructions delivered",
+      "subtitle": "Apartments • Family houses • Loft conversions",
+      "caption": "Recent completion",
+      "location": "Vinohrady Residence"
+    }
+  },
+  "team": {
+    "kicker": "About us",
+    "title": "Precision led by Robert Šiška",
+    "subtitle": "With fifteen years of hands-on experience, Robert guides every project with a steady balance of architecture, engineering and craft.",
+    "description": "We partner with verified architects, suppliers and craftsmen to orchestrate renovations that feel effortless for the client. Weekly reporting, transparent costing and on-site supervision ensure every detail lands exactly as planned.",
+    "highlights": [
+      "End-to-end project management with curated suppliers",
+      "Architect and interior designer collaboration",
+      "Certified craftsmen and bespoke joinery workshop",
+      "Transparent budgeting with weekly progress reviews"
+    ],
+    "member": {
+      "role": "Founder & Project Lead"
+    }
+  },
+  "projects": {
+    "title": "Latest projects",
+    "subtitle": "A curated look at recent reconstructions combining architecture, technology and crafted interiors.",
+    "cta": "All projects",
+    "empty": "Projects coming soon."
+  },
+  "contact": {
+    "kicker": "Contact",
+    "title": "Ready to start your renovation?",
+    "subtitle": "Call or email Robert Šiška to arrange a consultation, site visit or budgeting workshop.",
+    "note": "Available weekdays 08:00–18:00 CET."
+  }
+}

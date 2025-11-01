@@ -1,0 +1,29 @@
+{
+  "meta": {
+    "listTitle": "Projects",
+    "detailTitle": "{{project}} – renovation project",
+    "listHeading": "Renovation portfolio"
+  },
+  "filters": {
+    "all": "All",
+    "apartments": "Apartments",
+    "houses": "Houses",
+    "lofts": "Lofts",
+    "commercial": "Showrooms & commercial",
+    "reconstructions": "Full reconstructions"
+  },
+  "detail": {
+    "about": "About the project",
+    "scope": "Scope of work",
+    "location": "Location",
+    "year": "Year",
+    "area": "Floor area",
+    "investor": "Client",
+    "services": "Delivered services",
+    "metrics": "Key figures",
+    "gallery": "Project gallery",
+    "back": "Back to projects",
+    "imagesCount": "images"
+  },
+  "empty": "No projects match the selected filter."
+}

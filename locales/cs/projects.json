@@ -1,0 +1,29 @@
+{
+  "meta": {
+    "listTitle": "Projekty",
+    "detailTitle": "{{project}} – rekonstrukce",
+    "listHeading": "Portfólio rekonstrukcí"
+  },
+  "filters": {
+    "all": "Vše",
+    "apartments": "Byty",
+    "houses": "Domy",
+    "lofts": "Lofty",
+    "commercial": "Showroomy a komerce",
+    "reconstructions": "Kompletní rekonstrukce"
+  },
+  "detail": {
+    "about": "O projektu",
+    "scope": "Rozsah prací",
+    "location": "Lokalita",
+    "year": "Rok",
+    "area": "Podlahová plocha",
+    "investor": "Investor",
+    "services": "Dodané služby",
+    "metrics": "Klíčová čísla",
+    "gallery": "Galerie projektu",
+    "back": "Zpět na projekty",
+    "imagesCount": "fotografií"
+  },
+  "empty": "Pro zvolený filtr zatím nemáme projekty."
+}
