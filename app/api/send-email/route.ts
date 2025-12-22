@@ -1,11 +1,16 @@
 import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
 
-const RESEND_API_KEY = process.env.RESEND_API_KEY || '';
 const EMAIL_TO = process.env.EMAIL_TO || 'contact@siskaconstructioninc.com';
 const EMAIL_FROM = process.env.EMAIL_FROM || 'onboarding@resend.dev';
 
-const resend = new Resend(RESEND_API_KEY);
+let resend: Resend | null = null;
+function getResend() {
+  const key = process.env.RESEND_API_KEY;
+  if (!key) return null;
+  if (!resend) resend = new Resend(key);
+  return resend;
+}
 
 function escapeHtml(str: string) {
   return str
@@ -17,7 +22,8 @@ function escapeHtml(str: string) {
 }
 
 export async function POST(request: Request) {
-  if (!RESEND_API_KEY) {
+  const client = getResend();
+  if (!client) {
     return NextResponse.json({ error: 'Missing RESEND_API_KEY on server' }, { status: 500 });
   }
 
@@ -53,7 +59,7 @@ export async function POST(request: Request) {
       <div>${escapeHtml(message).replace(/\n/g, '<br/>')}</div>
     `;
 
-    await resend.emails.send({
+    await client.emails.send({
       from: EMAIL_FROM,
       to: EMAIL_TO,
       subject,
