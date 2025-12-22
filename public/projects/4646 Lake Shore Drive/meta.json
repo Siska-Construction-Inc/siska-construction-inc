@@ -1,0 +1,31 @@
+{
+  "name": "4646 Lake Shore Drive",
+  "location": "4646 Lake Shore Drive",
+  "year": 2023,
+  "area": 210,
+  "investor": "Rodinný investor",
+  "categories": ["houses"],
+  "featured": false,
+  "translations": {
+    "cs": {
+      "name": "4646 Lake Shore Drive",
+      "summary": "Kompletní modernizace rodinného domu s otevřenou dispozicí a propojením se zahradou.",
+      "description": "Projekt přetvořil tradiční dům na současné rodinné bydlení s velkými průhledy do zahrady, energetickými úpravami a novou kuchyní spojenou s jídelnou.",
+      "scope": [
+        "Úpravy dispozice a propojení s exteriérem",
+        "Výměna oken a zateplení",
+        "Návrh a realizace kuchyně a terasy"
+      ]
+    },
+    "en": {
+      "name": "4646 Lake Shore Drive",
+      "summary": "A full modernization of a family house with an open plan and garden connection.",
+      "description": "The project rewired a traditional home into contemporary family living with expansive garden-facing glazing, energy upgrades and a new kitchen-dining heart.",
+      "scope": [
+        "Reworked layout and exterior connections",
+        "Window replacement and insulation",
+        "Kitchen and terrace design and build"
+      ]
+    }
+  }
+}

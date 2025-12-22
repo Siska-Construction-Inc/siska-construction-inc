@@ -1,0 +1,31 @@
+{
+  "name": "St Charles",
+  "location": "St Charles",
+  "year": 2024,
+  "area": 200,
+  "investor": "Developerský projekt",
+  "categories": ["apartments", "commercial"],
+  "featured": true,
+  "translations": {
+    "cs": {
+      "name": "St Charles",
+      "summary": "Větší developerský projekt s několika byty a společnými prostory, realizovaný s vysokým standardem detailu.",
+      "description": "Projekt zahrnoval koordinaci více jednotek, komunikaci s dodavateli a dohled nad jednotnými materiálovými řešeními napříč celým objektem.",
+      "scope": [
+        "Koordinace více bytových jednotek",
+        "Standardizace materiálů a detailů",
+        "Kontrola rozpočtu a harmonogramu"
+      ]
+    },
+    "en": {
+      "name": "St Charles",
+      "summary": "A larger developer project with multiple units and shared spaces, delivered with high attention to detail.",
+      "description": "The scope included coordination across units, supplier management and consistent material specification throughout the building.",
+      "scope": [
+        "Multi-unit coordination",
+        "Material and detail standardisation",
+        "Budget and schedule control"
+      ]
+    }
+  }
+}

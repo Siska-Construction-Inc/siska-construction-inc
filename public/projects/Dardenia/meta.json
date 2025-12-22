@@ -1,0 +1,31 @@
+{
+  "name": "Dardenia",
+  "location": "Dardenia",
+  "year": 2023,
+  "area": 140,
+  "investor": "Soukromý investor",
+  "categories": ["houses", "reconstructions"],
+  "featured": true,
+  "translations": {
+    "cs": {
+      "name": "Dardenia",
+      "summary": "Komplexní rekonstrukce rodinného domu s důrazem na přírodní materiály a denní světlo.",
+      "description": "Dům jsme proměnili do současné podoby s otevřenou denní částí, přírodními dřevěnými obklady a citlivou integrací technologií.",
+      "scope": [
+        "Stavební úpravy a zateplení",
+        "Interiérové práce a truhlářství",
+        "Energetické řešení a řízení domu"
+      ]
+    },
+    "en": {
+      "name": "Dardenia",
+      "summary": "A full family house refurbishment focused on natural materials and daylight.",
+      "description": "We transformed the house into a contemporary home with an open living area, timber cladding and carefully integrated systems.",
+      "scope": [
+        "Structural modifications and insulation",
+        "Interior works and bespoke joinery",
+        "Energy systems and home controls"
+      ]
+    }
+  }
+}

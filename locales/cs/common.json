@@ -1,0 +1,37 @@
+{
+  "navigation": {
+    "home": "Domů",
+    "projects": "Projekty",
+    "about": "O nás",
+    "contact": "Kontakt"
+  },
+  "cta": {
+    "requestQuote": "Domluvit konzultaci",
+    "viewProject": "Zobrazit projekt"
+  },
+  "footer": {
+    "rights": "© {{year}} Siska Construction Inc. Všechna práva vyhrazena.",
+    "crafted": "Web vytvořil"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "phone": "Telefon",
+    "email": "E-mail",
+    "name": "Jméno",
+    "message": "Zpráva"
+  ,
+    "form": {
+      "send": "Odeslat",
+      "sending": "Odesílám…",
+      "success": "Zpráva byla odeslána.",
+      "errors": {
+        "missing": "Vyplňte prosím e-mail a zprávu.",
+        "generic": "Při odesílání došlo k chybě. Zkuste to prosím znovu."
+      }
+    }
+  },
+  "breadcrumb": {
+    "projects": "Projekty",
+    "back": "Zpět na projekty"
+  }
+}

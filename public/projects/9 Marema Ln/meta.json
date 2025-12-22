@@ -1,0 +1,31 @@
+{
+  "name": "9 Marema Ln",
+  "location": "9 Marema Ln",
+  "year": 2025,
+  "area": 72,
+  "investor": "Soukromý investor",
+  "categories": ["apartments"],
+  "featured": false,
+  "translations": {
+    "cs": {
+      "name": "9 Marema Ln",
+      "summary": "Malý městský byt po rekonstrukci s praktickým uspořádáním a výjimečnými úložnými řešeními.",
+      "description": "Cílem bylo maximálně využít dispozici a doplnit kvalitní vestavby. Výsledkem je kompaktní, světlý interiér s paletou tlumených materiálů.",
+      "scope": [
+        "Dispoziční úpravy a vestavěné řešení",
+        "Kompletní elektro a podlahy",
+        "Výroba nábytku na míru"
+      ]
+    },
+    "en": {
+      "name": "9 Marema Ln",
+      "summary": "A compact city apartment renovation with clever storage and efficient layout.",
+      "description": "We maximized the plan and delivered high-quality built-ins. The result is a bright, calm interior using a muted material palette.",
+      "scope": [
+        "Layout reconfiguration and built-in solutions",
+        "Full electrical and flooring works",
+        "Custom joinery production"
+      ]
+    }
+  }
+}

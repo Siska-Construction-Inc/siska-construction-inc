@@ -1,0 +1,37 @@
+{
+  "navigation": {
+    "home": "Home",
+    "projects": "Projects",
+    "about": "About us",
+    "contact": "Contact"
+  },
+  "cta": {
+    "requestQuote": "Request a consultation",
+    "viewProject": "View project"
+  },
+  "footer": {
+    "rights": "© {{year}} Siska Construction Inc. All rights reserved.",
+    "crafted": "Website crafted by"
+  },
+  "contact": {
+    "title": "Contact",
+    "phone": "Phone",
+    "email": "Email",
+    "name": "Name",
+    "message": "Message"
+  ,
+    "form": {
+      "send": "Send",
+      "sending": "Sending…",
+      "success": "Message sent successfully.",
+      "errors": {
+        "missing": "Please provide an email and a message.",
+        "generic": "There was an error sending your message. Please try again."
+      }
+    }
+  },
+  "breadcrumb": {
+    "projects": "Projects",
+    "back": "Back to all projects"
+  }
+}

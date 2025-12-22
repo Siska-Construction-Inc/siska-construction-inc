@@ -1,0 +1,72 @@
+{
+  "hero": {
+    "kicker": "About us",
+    "title": "We steer renovations with precision and care",
+    "description": "From the first sketch to the final walkthrough, we orchestrate architecture, engineering and craft so the result feels effortless."
+  },
+  "essence": [
+    {
+      "title": "Full-spectrum coordination",
+      "text": "Every phase has a dedicated lead and clear milestones, so clients always know what comes next."
+    },
+    {
+      "title": "Transparent process",
+      "text": "Weekly reports, detailed budgets and on-site supervision keep every project grounded."
+    },
+    {
+      "title": "Crafted execution",
+      "text": "Our in-house joinery and trusted partners let us realize bespoke details with confidence."
+    }
+  ],
+  "essenceHeading": "Our approach",
+  "teamHeading": "Extended team",
+  "teamDescription": "These specialists bring design, technical direction and client care so you feel supported behind the scenes.",
+  "team": {
+    "kicker": "Team",
+    "subtitle": "With fifteen years of hands-on experience, Robert guides every project with a steady balance of architecture, engineering and craft.",
+    "member": {
+      "role": "Founder & Project Lead"
+    }
+  },
+  "teamMembers": [
+    {
+      "name": "Marta Vávrová",
+      "role": "Lead interior designer",
+      "bio": "Marta sets material palettes, curates styling and develops detailed visualizations for every phase."
+    },
+    {
+      "name": "Ondřej Dvořák",
+      "role": "Technical director",
+      "bio": "He oversees engineering, structural reviews and budgets to make sure the concept is buildable."
+    },
+    {
+      "name": "Elena Křížová",
+      "role": "Client experience lead",
+      "bio": "Elena manages client communication, schedules walkthroughs and keeps the process calm and transparent."
+    }
+  ],
+  "historyHeading": "Company history",
+  "historyIntro": "Every milestone has shaped the studio into an unwavering partner for complex renovations.",
+  "history": [
+    {
+      "year": "2009",
+      "title": "Studio founded",
+      "description": "Robert Šiška launched the practice, weaving architectural intent with craftsmanship."
+    },
+    {
+      "year": "2013",
+      "title": "In-house workshop",
+      "description": "Adding a joinery workshop gave control over bespoke furniture, millwork and finishes."
+    },
+    {
+      "year": "2018",
+      "title": "Prague milestone projects",
+      "description": "Over twenty luxury apartment renovations were delivered with dedicated artistic oversight."
+    },
+    {
+      "year": "2023",
+      "title": "Chicago collaboration",
+      "description": "European expertise joined forces with modern American craftsmanship, expanding our lens internationally."
+    }
+  ]
+}
