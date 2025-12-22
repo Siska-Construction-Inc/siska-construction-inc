@@ -1,6 +1,5 @@
 {
   "hero": {
-    "badge": "Design-led renovations",
     "title": "Modern conversions for apartments and houses",
     "subtitle": "Siska Construction delivers thoughtful reconstructions that balance refined aesthetics with resilient detail, managing every phase from concept to final styling.",
     "ctaPrimary": "View projects",
@@ -23,13 +22,13 @@
       "Certified craftsmen and bespoke joinery workshop",
       "Transparent budgeting with weekly progress reviews"
     ],
+    "cta": "Discover more",
     "member": {
       "role": "Founder & Project Lead"
     }
   },
   "projects": {
-    "title": "Latest projects",
-    "subtitle": "A curated look at recent reconstructions combining architecture, technology and crafted interiors.",
+    "title": "Projects we're most proud of",
     "cta": "All projects",
     "empty": "Projects coming soon."
   },

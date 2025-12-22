@@ -2,7 +2,7 @@
   "navigation": {
     "home": "Home",
     "projects": "Projects",
-    "about": "About",
+    "about": "About us",
     "contact": "Contact"
   },
   "cta": {
@@ -16,12 +16,19 @@
   "contact": {
     "title": "Contact",
     "phone": "Phone",
-    "email": "Email"
-  },
-  "language": {
-    "label": "Language",
-    "cs": "Česky",
-    "en": "English"
+    "email": "Email",
+    "name": "Name",
+    "message": "Message"
+  ,
+    "form": {
+      "send": "Send",
+      "sending": "Sending…",
+      "success": "Message sent successfully.",
+      "errors": {
+        "missing": "Please provide an email and a message.",
+        "generic": "There was an error sending your message. Please try again."
+      }
+    }
   },
   "breadcrumb": {
     "projects": "Projects",

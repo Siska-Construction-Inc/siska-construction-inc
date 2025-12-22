@@ -1,6 +1,5 @@
 {
   "hero": {
-    "badge": "Designové rekonstrukce",
     "title": "Moderní přestavby bytů a domů",
     "subtitle": "Siska Construction přetváří interiéry do detailu promyšleným způsobem – od prvního konceptu po finální styling řídíme každý krok s důrazem na kvalitu a klidný průběh.",
     "ctaPrimary": "Prohlédnout projekty",
@@ -23,13 +22,13 @@
       "Certifikovaní řemeslníci a vlastní truhlářská výroba",
       "Transparentní rozpočty a pravidelný reporting"
     ],
+    "cta": "Dozvědět se více",
     "member": {
       "role": "Zakladatel & projektový vedoucí"
     }
   },
   "projects": {
-    "title": "Nejnovější projekty",
-    "subtitle": "Výběr rekonstrukcí, kde se potkává architektura, technologie a autorské detaily.",
+    "title": "Projekty na které jsme nejvíce hrdí",
     "cta": "Všechny projekty",
     "empty": "Projekty připravujeme."
   },

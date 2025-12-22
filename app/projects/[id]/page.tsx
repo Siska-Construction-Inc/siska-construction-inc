@@ -1,7 +1,6 @@
 import { headers } from "next/headers";
 import { notFound } from "next/navigation";
-
-import { ProjectDetailContent } from "@/components/sections/ProjectDetailContent";
+import { ProjectDetailContent } from "@/components/ProjectDetailContent";
 import { getProjectById, projects } from "@/data/projects";
 import { initTranslations } from "@/lib/i18n/initTranslations";
 import { resolveLocale } from "@/lib/i18n/localeUtils";

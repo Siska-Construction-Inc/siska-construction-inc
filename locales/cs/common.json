@@ -16,12 +16,19 @@
   "contact": {
     "title": "Kontakt",
     "phone": "Telefon",
-    "email": "E-mail"
-  },
-  "language": {
-    "label": "Jazyk",
-    "cs": "Česky",
-    "en": "English"
+    "email": "E-mail",
+    "name": "Jméno",
+    "message": "Zpráva"
+  ,
+    "form": {
+      "send": "Odeslat",
+      "sending": "Odesílám…",
+      "success": "Zpráva byla odeslána.",
+      "errors": {
+        "missing": "Vyplňte prosím e-mail a zprávu.",
+        "generic": "Při odesílání došlo k chybě. Zkuste to prosím znovu."
+      }
+    }
   },
   "breadcrumb": {
     "projects": "Projekty",

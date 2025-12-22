@@ -1,0 +1,31 @@
+{
+  "name": "Desert West Drive",
+  "location": "Desert West Drive",
+  "year": 2020,
+  "area": 160,
+  "investor": "Developerský projekt",
+  "categories": ["houses", "commercial"],
+  "featured": false,
+  "translations": {
+    "cs": {
+      "name": "Desert West Drive",
+      "summary": "Moderní rekonstrukce s důrazem na materiálovou konzistenci a venkovní terasu.",
+      "description": "Projekt kombinuje otevřené vnitřní plochy s exteriérovými terasami a důrazem na trvanlivé materiály a jednoduchou údržbu.",
+      "scope": [
+        "Exteriérové terasy a propojení s vnitřním prostorem",
+        "Trvanlivé fasádní a podlahové řešení",
+        "Koordinace dodavatelů a údržby"
+      ]
+    },
+    "en": {
+      "name": "Desert West Drive",
+      "summary": "A modern renovation emphasising material consistency and outdoor terraces.",
+      "description": "The project links generous interiors with outdoor terraces, focusing on durable materials and low-maintenance solutions.",
+      "scope": [
+        "Terrace and interior integration",
+        "Durable facade and flooring systems",
+        "Contractor coordination and maintenance planning"
+      ]
+    }
+  }
+}

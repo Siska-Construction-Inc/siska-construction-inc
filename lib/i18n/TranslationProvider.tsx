@@ -1,24 +1,10 @@
 
 'use client';
 
-import {
-  createContext,
-  useCallback,
-  useContext,
-  useEffect,
-  useMemo,
-  useState,
-  type ReactNode,
-} from "react";
+import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
 import { I18nextProvider, initReactI18next } from "react-i18next";
 import { createInstance, type Resource } from "i18next";
-
-import {
-  defaultLocale,
-  defaultNamespace,
-  locales,
-  type Locale,
-} from "./settings";
+import { defaultLocale, defaultNamespace, locales, type Locale } from "./settings";
 
 type LocaleContextValue = {
   locale: Locale;
@@ -43,25 +29,22 @@ export function TranslationProvider({
   resources,
   children,
 }: TranslationProviderProps) {
-  const [locale, setLocaleState] = useState<Locale>(() => {
-    if (typeof window === "undefined") {
-      return initialLocale;
-    }
+  const [locale, setLocaleState] = useState<Locale>(initialLocale);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
 
     const stored = window.localStorage.getItem(STORAGE_KEY);
-
     if (stored && locales.includes(stored as Locale)) {
-      return stored as Locale;
+      setLocaleState(stored as Locale);
+      return;
     }
 
     const navigatorLanguage = window.navigator?.language?.split("-")[0];
-
     if (navigatorLanguage && locales.includes(navigatorLanguage as Locale)) {
-      return navigatorLanguage as Locale;
+      setLocaleState(navigatorLanguage as Locale);
     }
-
-    return initialLocale;
-  });
+  }, [initialLocale]);
 
   const [i18nInstance] = useState(() => {
     const instance = createInstance();

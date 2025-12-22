@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import { headers } from "next/headers";
 import { Geist, Geist_Mono } from "next/font/google";
-
-import { Footer } from "@/components/layout/Footer";
-import { Header } from "@/components/layout/Header";
+import { Footer } from "@/components/Footer";
+import { Header } from "@/components/Header";
 import { TranslationProvider } from "@/lib/i18n/TranslationProvider";
 import { initTranslations } from "@/lib/i18n/initTranslations";
 import { resolveLocale } from "@/lib/i18n/localeUtils";

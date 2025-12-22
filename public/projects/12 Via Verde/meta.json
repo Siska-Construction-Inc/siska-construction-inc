@@ -1,0 +1,31 @@
+{
+  "name": "12 Via Verde",
+  "location": "12 Via Verde",
+  "year": 2022,
+  "area": 95,
+  "investor": "Soukromý investor",
+  "categories": ["apartments", "reconstructions"],
+  "featured": true,
+  "translations": {
+    "cs": {
+      "name": "12 Via Verde",
+      "summary": "Elegantní rekonstrukce bytu s důrazem na kvalitu materiálů a řemeslné detaily.",
+      "description": "Byt v historickém domě jsme proměnili ve světlý a přehledný domov. Zachovali jsme původní rámování oken a doplnili vestavěné úložné prostory na míru.",
+      "scope": [
+        "Kompletní stavební a elektro práce",
+        "Nábytek a obklady na míru",
+        "Autorský dozor a koordinace řemesel"
+      ]
+    },
+    "en": {
+      "name": "12 Via Verde",
+      "summary": "An elegant apartment renovation focused on material quality and crafted details.",
+      "description": "We transformed a flat in a historic building into a bright, efficient home. Original window frames were restored and bespoke storage was integrated throughout.",
+      "scope": [
+        "Full construction and electrical works",
+        "Bespoke joinery and finishes",
+        "Authorial supervision and trades coordination"
+      ]
+    }
+  }
+}
