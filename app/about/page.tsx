@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
 import { useAppLocale } from "@/lib/i18n/TranslationProvider";
+import { CONTACT_PERSON_CS, CONTACT_PERSON_EN } from "@/components/constants";
 
 type EssenceCard = {
   title: string;
@@ -29,7 +30,8 @@ function toArray<T>(val: unknown): T[] {
 
 export default function AboutPage() {
   const { t } = useTranslation("about");
-  useAppLocale();
+  const { locale } = useAppLocale();
+  const contactName = locale === "cs" ? CONTACT_PERSON_CS : CONTACT_PERSON_EN;
 
   const rawEssence = t("essence", { returnObjects: true });
   const rawTeam = t("teamMembers", { returnObjects: true });
@@ -50,10 +52,10 @@ export default function AboutPage() {
             <p className="text-base text-neutral-600">{t("hero.description")}</p>
           </div>
           <div className="relative flex items-center justify-center">
-            <div className="relative w-full max-w-md overflow-hidden rounded-[32px] border border-neutral-200 bg-neutral-900/5">
+            <div className="relative w-full max-w-md overflow-hidden rounded-4xl border border-neutral-200 bg-neutral-900/5">
               <Image
                 src="/team/robert.jpg"
-                alt="Robert Šiška in the office"
+                alt="Robert Siska in the office"
                 width={640}
                 height={720}
                 className="h-full w-full object-cover"
@@ -61,7 +63,7 @@ export default function AboutPage() {
               />
               <div className="absolute inset-x-6 bottom-6 rounded-3xl border border-white/30 bg-neutral-900/80 px-6 py-4 text-neutral-100 shadow-lg">
                 <p className="text-xs font-semibold uppercase tracking-[0.3em] text-neutral-300">{t("team.member.role")}</p>
-                <p className="mt-1 text-lg font-semibold">Robert Šiška</p>
+                <p className="mt-1 text-lg font-semibold">{contactName}</p>
               </div>
             </div>
           </div>
@@ -90,9 +92,9 @@ export default function AboutPage() {
             <h2 className="text-3xl font-semibold text-neutral-900 md:text-4xl">{t("teamHeading")}</h2>
             <p className="text-base text-neutral-600">{t("teamDescription")}</p>
           </div>
-          <div className="grid gap-6 md:grid-cols-3">
+          <div className="flex flex-wrap justify-center gap-6">
             {teamMembers.map((member) => (
-              <article key={member.name} className="rounded-3xl border border-neutral-200 bg-neutral-50 p-6 shadow-sm shadow-neutral-900/5">
+              <article key={member.name} className="basis-full sm:basis-1/2 md:basis-1/3 max-w-sm rounded-3xl border border-neutral-200 bg-neutral-50 p-6 shadow-sm shadow-neutral-900/5">
                 <p className="text-xs font-semibold uppercase tracking-[0.3em] text-neutral-500">{member.role}</p>
                 <h3 className="mt-2 text-xl font-semibold text-neutral-900">{member.name}</h3>
                 <p className="mt-3 text-sm text-neutral-600">{member.bio}</p>

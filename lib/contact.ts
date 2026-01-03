@@ -1,7 +1,8 @@
 import type { Locale } from "@/lib/i18n/settings";
 import {
   CONTACT_EMAIL,
-  CONTACT_PERSON,
+  CONTACT_PERSON_CS,
+  CONTACT_PERSON_EN,
   MAIL_BODY_CS,
   MAIL_BODY_EN,
   MAIL_SUBJECT_CS,
@@ -13,7 +14,11 @@ import {
 } from "@/components/constants";
 
 export const contactEmail = CONTACT_EMAIL;
-export const contactPerson = CONTACT_PERSON;
+export const contactPerson = CONTACT_PERSON_CS;
+
+export function getContactPerson(locale: Locale) {
+  return locale === "cs" ? CONTACT_PERSON_CS : CONTACT_PERSON_EN;
+}
 const mailMap: Record<Locale, { subject: string; body: string }> = {
   cs: {
     subject: MAIL_SUBJECT_CS,

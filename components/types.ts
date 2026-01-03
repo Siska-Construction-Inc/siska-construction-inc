@@ -2,10 +2,7 @@ import type { Locale } from "@/lib/i18n/settings";
 
 export type ProjectCategory =
   | "apartments"
-  | "houses"
-  | "lofts"
-  | "commercial"
-  | "reconstructions";
+  | "houses";
 
 export type ProjectTranslation = {
   name: string;
@@ -19,9 +16,9 @@ export type Project = {
   coverImage: string;
   gallery: string[];
   location: string;
-  year: number;
-  area: number;
-  investor: string;
+  year?: number;
+  area_m2?: number;
+  area_sqft?: number;
   categories: ProjectCategory[];
   featured?: boolean;
   translations: Record<Locale, ProjectTranslation>;

@@ -71,9 +71,9 @@ function loadProjectsFromPublic(): Project[] {
           coverImage,
           gallery,
           location: folder,
-          year: (meta && (meta as any).year) ?? sourceFromBase?.year ?? new Date().getFullYear(),
-          area: (meta && (meta as any).area) ?? sourceFromBase?.area ?? 0,
-          investor: (meta && (meta as any).investor) ?? sourceFromBase?.investor ?? "",
+          year: (meta && (meta as any).year) ?? sourceFromBase?.year ?? undefined,
+          area_m2: (meta && (meta as any).area_m2) ?? (meta && (meta as any).area) ?? sourceFromBase?.area_m2 ?? undefined,
+          area_sqft: (meta && (meta as any).area_sqft) ?? undefined,
           categories: (meta && (meta as any).categories) ?? sourceFromBase?.categories ?? [],
           featured: !!((meta && (meta as any).featured) ?? sourceFromBase?.featured),
           translations: translations as Record<any, any>,
@@ -103,22 +103,34 @@ export function getProjectsForLocale(locale: Locale) {
 export function getFeaturedProjects(limit = 3) {
   const featuredProjects = projects.filter((project) => project.featured);
 
-  if (featuredProjects.length >= limit) {
-    return featuredProjects.slice(0, limit);
-  }
+  const desiredOrder = [
+    "desert-west-drive",
+    "saint-charles",
+    "n-oakley",
+  ];
 
-  const needed = limit - featuredProjects.length;
+  const orderedFeatured = desiredOrder
+    .map((id) => projects.find((p) => p.id === id))
+    .filter(Boolean) as Project[];
+
+  const remainingFeatured = featuredProjects.filter((p) => !desiredOrder.includes(p.id));
+
+  const combined = [...orderedFeatured, ...remainingFeatured];
+
+  if (combined.length >= limit) return combined.slice(0, limit);
+
+  const needed = limit - combined.length;
   const additional = [...projects]
     .filter((project) => !project.featured)
-    .sort((a, b) => b.year - a.year)
+    .sort((a, b) => (b.year ?? 0) - (a.year ?? 0))
     .slice(0, needed);
 
-  return [...featuredProjects, ...additional].slice(0, limit);
+  return [...combined, ...additional].slice(0, limit);
 }
 
 export function getLatestProjects(limit = 3) {
   return [...projects]
-    .sort((a, b) => b.year - a.year)
+    .sort((a, b) => (b.year ?? 0) - (a.year ?? 0))
     .slice(0, limit);
 }
 
@@ -126,7 +138,7 @@ export function getLatestProject(): Project | undefined {
   if (!projects || projects.length === 0) return undefined;
 
   return projects.reduce((latest, current) =>
-    current.year > latest.year ? current : latest
+    (current.year ?? 0) > (latest.year ?? 0) ? current : latest
   );
 }
 

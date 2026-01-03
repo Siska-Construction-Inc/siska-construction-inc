@@ -22,6 +22,21 @@ export function ProjectDetailContent({ project }: ProjectDetailContentProps) {
     return project.translations[locale] ?? project.translations[defaultLocale];
   }, [locale, project]);
 
+  const locationLabel = project.location || null;
+  const yearLabel = project.year ?? null;
+  const areaLabel =
+    locale === "en"
+      ? project.area_sqft
+        ? `${project.area_sqft} sq ft`
+        : project.area_m2
+        ? `${project.area_m2} m²`
+        : null
+      : project.area_m2
+      ? `${project.area_m2} m²`
+      : project.area_sqft
+      ? `${project.area_sqft} sq ft`
+      : null;
+
   return (
     <article className="bg-white">
       <div className="relative h-[60vh] min-h-[420px] w-full overflow-hidden">
@@ -57,48 +72,48 @@ export function ProjectDetailContent({ project }: ProjectDetailContentProps) {
               <p className={metricLabelClasses}>{t("projects:detail.about")}</p>
               <p className="text-base text-neutral-600 md:text-lg">{translation.description}</p>
             </div>
-            <div>
-              <p className={metricLabelClasses}>{t("projects:detail.scope")}</p>
-              <ul className="mt-4 space-y-3">
-                {translation.scope.map((item) => (
-                  <li
-                    key={item}
-                    className="rounded-2xl border border-neutral-200 bg-white px-5 py-4 text-sm text-neutral-600 shadow-sm shadow-neutral-900/5"
-                  >
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
+            {translation.scope && translation.scope.length > 0 && (
+              <div>
+                <p className={metricLabelClasses}>{t("projects:detail.scope")}</p>
+                <ul className="mt-4 space-y-3">
+                  {translation.scope.map((item) => (
+                    <li
+                      key={item}
+                      className="rounded-2xl border border-neutral-200 bg-white px-5 py-4 text-sm text-neutral-600 shadow-sm shadow-neutral-900/5"
+                    >
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </div>
-          <aside className="rounded-4xl border border-neutral-200 bg-neutral-50 p-6 shadow-sm shadow-neutral-900/10">
+          <aside className="self-start rounded-4xl border border-neutral-200 bg-neutral-50 p-6 shadow-sm shadow-neutral-900/10">
             <p className="text-sm font-semibold uppercase tracking-[0.3em] text-neutral-500">
               {t("projects:detail.metrics")}
             </p>
             <dl className="mt-6 space-y-4 text-sm text-neutral-700">
-              <div className="flex items-center justify-between gap-4">
-                <dt className="text-neutral-500">{t("projects:detail.location")}</dt>
-                <dd className="text-right font-semibold text-neutral-900">{project.location}</dd>
-              </div>
-              <div className="flex items-center justify-between gap-4">
-                <dt className="text-neutral-500">{t("projects:detail.year")}</dt>
-                <dd className="text-right font-semibold text-neutral-900">{project.year}</dd>
-              </div>
-              <div className="flex items-center justify-between gap-4">
-                <dt className="text-neutral-500">{t("projects:detail.area")}</dt>
-                <dd className="text-right font-semibold text-neutral-900">{project.area} m²</dd>
-              </div>
-              <div className="flex items-center justify-between gap-4">
-                <dt className="text-neutral-500">{t("projects:detail.investor")}</dt>
-                <dd className="text-right font-semibold text-neutral-900">{project.investor}</dd>
-              </div>
+              {locationLabel && (
+                <div className="flex items-center justify-between gap-4">
+                  <dt className="text-neutral-500">{t("projects:detail.location")}</dt>
+                  <dd className="text-right font-semibold text-neutral-900">{locationLabel}</dd>
+                </div>
+              )}
+
+              {yearLabel && (
+                <div className="flex items-center justify-between gap-4">
+                  <dt className="text-neutral-500">{t("projects:detail.year")}</dt>
+                  <dd className="text-right font-semibold text-neutral-900">{yearLabel}</dd>
+                </div>
+              )}
+
+              {areaLabel && (
+                <div className="flex items-center justify-between gap-4">
+                  <dt className="text-neutral-500">{t("projects:detail.area")}</dt>
+                  <dd className="text-right font-semibold text-neutral-900">{areaLabel}</dd>
+                </div>
+              )}
             </dl>
-            <div className="mt-6 space-y-2 text-xs uppercase tracking-[0.3em] text-neutral-500">
-              <p>{t("projects:detail.services")}</p>
-              <p className="font-semibold text-neutral-900">
-                {project.categories.map((category) => t(`filters.${category}` as const)).join(" · ")}
-              </p>
-            </div>
           </aside>
         </section>
 
@@ -109,18 +124,29 @@ export function ProjectDetailContent({ project }: ProjectDetailContentProps) {
             </h2>
             <span className="text-sm text-neutral-500">{project.gallery.length} {t("projects:detail.imagesCount")}</span>
           </div>
-          <div className="grid gap-4 md:grid-cols-2">
-            {project.gallery.map((image) => (
-              <div key={image} className="relative h-72 overflow-hidden rounded-3xl bg-neutral-100">
-                <Image
-                  src={image}
-                  alt={`${translation.name} photo`}
-                  fill
-                  className="object-cover transition duration-500 hover:scale-105"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
-              </div>
-            ))}
+          <div className="space-y-4">
+            {(() => {
+              const rows: string[][] = [];
+              for (let i = 0; i < project.gallery.length; i += 2) {
+                rows.push(project.gallery.slice(i, i + 2));
+              }
+
+              return rows.map((row, rowIndex) => (
+                <div key={rowIndex} className={`flex gap-4 ${row.length === 1 ? "justify-center" : ""}`}>
+                  {row.map((image) => (
+                    <div key={image} className="relative h-72 overflow-hidden rounded-3xl bg-neutral-100 flex-1 min-w-0">
+                      <Image
+                        src={image}
+                        alt={`${translation.name} photo`}
+                        fill
+                        className="object-cover transition duration-500 hover:scale-105"
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                      />
+                    </div>
+                  ))}
+                </div>
+              ));
+            })()}
           </div>
         </section>
       </div>

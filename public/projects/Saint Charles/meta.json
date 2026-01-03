@@ -1,0 +1,21 @@
+{
+  "name": "Saint Charles",
+  "location": "Saint Charles IL",
+  "year": "",
+  "area_m2": "",
+  "area_sqft": "",
+  "categories": ["houses"],
+  "featured": true,
+  "translations": {
+    "cs": {
+      "name": "Saint Charles",
+      "summary": "Rekonstrukce koupelny a kuchyně pro příslušnou in-law jednotku.",
+      "description": "Rekonstrukce koupelny a kuchyně pro in-law jednotku."
+    },
+    "en": {
+      "name": "Saint Charles",
+      "summary": "Bathroom and in law kitchen remodeling.",
+      "description": "Bathroom and in law kitchen remodeling."
+    }
+  }
+}

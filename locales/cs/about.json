@@ -1,72 +1,57 @@
 {
   "hero": {
     "kicker": "O nás",
-    "title": "Řídíme rekonstrukce s přesností a péčí",
-    "description": "Od prvního náčrtu až po předání klíčů orchestrujeme architekturu, techniku a řemeslo tak, aby byl výsledek funkční a nadčasový."
+    "title": "Založeno v Chicagu v roce 1997",
+    "description": "Založeno v Chicagu v roce 1997, společnost se rychle stala lídrem v novostavbách a rekonstrukcích díky závazku ke kvalitnímu řemeslu. Viz stránka Projekty pro úplný seznam projektů."
   },
   "essence": [
     {
-      "title": "Kompletní řízení",
-      "text": "Každá fáze má svého vedoucího a jasné milníky, klient tak vždy ví, co přijde dál."
+      "title": "Zákazník na prvním místě",
+      "text": "Řídíme se filosofií zaměřenou na zákazníka a jsme odhodláni k vynikajícímu řemeslu, skvělému servisu a úplné spokojenosti zákazníků u každého projektu."
     },
     {
-      "title": "Transparentní proces",
-      "text": "Týdenní reporty, rozpočtové přehledy a autorský dohled drží projekt pod kontrolou."
+      "title": "Řemeslná šíře",
+      "text": "Naše odbornosti zahrnují kuchyně a koupelny na míru, všechny typy podlah a kompletní venkovní práce."
     },
     {
-      "title": "Řemeslné zázemí",
-      "text": "Vlastní truhlárna a prověření dodavatelé umožňují realizovat detaily do nejmenších rozměrů."
+      "title": "Úspora a osvětlení",
+      "text": "Poskytujeme také energeticky úsporná řešení a LED osvětlení jako součást našich služeb."
     }
   ],
-  "essenceHeading": "Naše zásady",
-  "teamHeading": "Další členové týmu",
-  "teamDescription": "Rozšířený tým přináší design, techniku a servis, aby klienti cítili, že je o ně průběžně postaráno.",
+  "essenceHeading": "Náš přístup",
+  "teamHeading": "Tým",
+  "teamDescription": "Založeno Robertem Šiškou, společnost a její tým poskytují vynikající služby postavené na zkušenostech, integritě a kvalitním řemesle.",
   "team": {
     "kicker": "Tým",
-    "subtitle": "Již patnáct let vede Robert projekty, které spojují architekturu, techniku a řemeslo do jednoho funkčního celku.",
+    "subtitle": "S více než 30 lety zkušeností a silným zázemím v obchodě a managementu se Robert a jeho tým pyšní úplnou spokojeností zákazníků u každého projektu, velkého i malého.",
     "member": {
-      "role": "Zakladatel & projektový vedoucí"
+      "role": "Zakladatel a ředitel"
     }
   },
   "teamMembers": [
     {
-      "name": "xxx xxx",
-      "role": "Vedoucí interiérového designu",
-      "bio": "XXX navrhuje materiálové studie, koordinuje styling a připravuje detailní vizualizace pro každou fázi."
-    },
-    {
-      "name": "xxx xx",
-      "role": "Technický ředitel",
-      "bio": "Dohlíží na technické provedení, statiku i rozpočty, aby se návrh vždy dal spolehlivě realizovat."
-    },
-    {
-      "name": "xxx x",
-      "role": "Koordinátorka klientských zkušeností",
-      "bio": "Drží kontakt s klienty, plánuje obhlídky a zajišťuje hladkou komunikaci napříč celým projektem."
+      "name": "Robert Šiška",
+      "role": "Zakladatel a ředitel",
+      "bio": "S více než 30 lety zkušeností a silným zázemím v obchodě a managementu se Robert a jeho tým pyšní tím, že dodávají úplnou spokojenost zákazníků u každého projektu, velkého i malého."
     }
   ],
   "historyHeading": "Historie společnosti",
-  "historyIntro": "Každý milník přiblížil společnost k bezchybnému řízení rekonstrukcí, které klientům přináší klid.",
+  "historyIntro": "Během naší historie se zákaznická základna rozrůstala především prostřednictvím opakovaných klientů, doporučení a dlouhodobé spokojenosti s naší prací.",
   "history": [
     {
-      "year": "2009",
-      "title": "Založení studia",
-      "description": "Robert Šiška zahájil projektové řízení, které spojilo architektonické smyčky s řemeslnými dílnami."
+      "year": "1997",
+      "title": "Založeno v Chicagu",
+      "description": "Založeno v Chicagu v roce 1997, společnost se rychle stala lídrem v novostavbách a rekonstrukcích díky závazku ke kvalitnímu řemeslu."
     },
     {
-      "year": "2013",
-      "title": "Vlastní výrobní dílna",
-      "description": "Rozšíření o truhlářskou dílnu přineslo kontrolu nad nábytkem, obklady i atypickými detaily."
+      "year": "2019",
+      "title": "Expanze do jižní Kalifornie",
+      "description": "V roce 2019 společnost expandovala do jižní Kalifornie a zároveň nadále sloužila zákazníkům v oblasti Chicaga."
     },
     {
-      "year": "2018",
-      "title": "Nadupané pražské zakázky",
-      "description": "Tým dokončil více než dvacet bytových rekonstrukcí v centrech Prahy, přičemž každý projekt měl autorský dohled."
-    },
-    {
-      "year": "2023",
-      "title": "Spojení s Chicagem",
-      "description": "Zkušenosti z Evropy se propojily s moderním přístupem v Chicagu a otevřely nové mezinárodní spolupráce."
+      "year": "Nepřetržitě od založení",
+      "title": "Náš závazek",
+      "description": "Jsme odhodláni k vynikajícímu řemeslu, skvělému servisu a úplné spokojenosti zákazníků u každého projektu."
     }
   ]
 }

@@ -80,9 +80,11 @@ export function ProjectsGallery({ projects }: ProjectsGalleryProps) {
             {t("empty")}
           </p>
         ) : (
-          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          <div className="flex flex-wrap justify-center gap-6">
             {filteredProjects.map((project) => (
-              <ProjectCard key={project.id} project={project} />
+              <div key={project.id} className="flex-none w-[320px]">
+                <ProjectCard project={project} />
+              </div>
             ))}
           </div>
         )}

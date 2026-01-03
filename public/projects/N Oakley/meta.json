@@ -1,0 +1,21 @@
+{
+  "name": "N. Oakley",
+  "location": "5112 N. Oakley, Chicago Northside",
+  "year": "",
+  "area_m2": "",
+  "area_sqft": "",
+  "categories": ["houses"],
+  "featured": false,
+  "translations": {
+    "cs": {
+      "name": "5112 N. Oakley",
+      "summary": "Výměna terasy na severní straně Chicaga.",
+      "description": "Výměna terasy na severní straně Chicaga."
+    },
+    "en": {
+      "name": "5112 N. Oakley",
+      "summary": "Deck replacement in Chicago Northside.",
+      "description": "Deck replacement in Chicago Northside."
+    }
+  }
+}

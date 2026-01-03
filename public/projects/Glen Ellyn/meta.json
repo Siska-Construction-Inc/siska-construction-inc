@@ -1,31 +1,21 @@
 {
   "name": "Glen Ellyn",
-  "location": "Glen Ellyn",
-  "year": 2019,
-  "area": 122,
-  "investor": "Soukromý investor",
-  "categories": ["apartments", "reconstructions"],
+  "location": "961 Winslow Cir, Glen Ellyn, IL",
+  "year": "",
+  "area_m2": "",
+  "area_sqft": "",
+  "categories": ["houses"],
   "featured": false,
   "translations": {
     "cs": {
-      "name": "Glen Ellyn",
-      "summary": "Citlivá přestavba bytu s důrazem na přirozené osvětlení a udržitelná řešení.",
-      "description": "V projektu jsme upravili dispozici, optimalizovali skladování a použili materiály s dlouhou životností pro minimální údržbu.",
-      "scope": [
-        "Optimalizace dispozice a úložných prostor",
-        "Instalace energeticky úsporných systémů",
-        "Truhlářské řešení a povrchové úpravy"
-      ]
+      "name": "961 Winslow Cir",
+      "summary": "Rekonstrukce hlavní koupelny v Glen Ellyn, IL.",
+      "description": "Rekonstrukce hlavní koupelny v Glen Ellyn, IL."
     },
     "en": {
-      "name": "Glen Ellyn",
-      "summary": "A considered apartment retrofit prioritising natural light and sustainable solutions.",
-      "description": "We reworked the layout, increased storage efficiency and specified long-life materials for low maintenance.",
-      "scope": [
-        "Layout optimisation and storage solutions",
-        "Energy-efficient system installations",
-        "Joinery and refined finishes"
-      ]
+      "name": "961 Winslow Cir",
+      "summary": "Master Bathroom remodeling Glen Ellyn IL.",
+      "description": "Master Bathroom remodeling Glen Ellyn IL."
     }
   }
 }

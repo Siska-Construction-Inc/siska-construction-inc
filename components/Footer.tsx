@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
 import { useAppLocale } from "@/lib/i18n/TranslationProvider";
-import { getContactPhone, getContactMailto, contactPerson, contactEmail } from "@/lib/contact";
+import { getContactPhone, getContactMailto, getContactPerson, contactEmail } from "@/lib/contact";
 
 const wrapperClasses = "border-t border-stone-200 bg-stone-50";
 const linkClasses = "text-sm font-medium text-stone-600 transition hover:text-stone-900";
@@ -13,6 +13,7 @@ export function Footer() {
   const { locale } = useAppLocale();
   const year = new Date().getFullYear();
   const phone = getContactPhone(locale);
+  const person = getContactPerson(locale);
 
   return (
     <footer className={wrapperClasses}>
@@ -22,7 +23,7 @@ export function Footer() {
             Siska Construction Inc.
           </p>
           <div className="text-sm text-stone-600">
-            <p>{contactPerson}</p>
+            <p>{person}</p>
             <p>
               <span className="font-medium">{t("contact.phone")}:</span>{" "}
               <a className={linkClasses} href={phone.href}>

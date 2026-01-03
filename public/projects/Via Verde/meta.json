@@ -1,0 +1,21 @@
+{
+  "name": "Via Verde",
+  "location": "12 Via Verde, Rancho Mirage, CA",
+  "year": "",
+  "area_m2": "",
+  "area_sqft": "",
+  "categories": ["houses"],
+  "featured": true,
+  "translations": {
+    "cs": {
+      "name": "12 Via Verde",
+      "summary": "Rekonstrukce 3 koupelen v Rancho Mirage, CA.",
+      "description": "Rekonstrukce 3 koupelen v Rancho Mirage, CA."
+    },
+    "en": {
+      "name": "12 Via Verde",
+      "summary": "Remodeling of 3 bathrooms in Rancho Mirage CA.",
+      "description": "Remodeling of 3 bathrooms in Rancho Mirage CA."
+    }
+  }
+}

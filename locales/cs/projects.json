@@ -7,10 +7,7 @@
   "filters": {
     "all": "Vše",
     "apartments": "Byty",
-    "houses": "Domy",
-    "lofts": "Lofty",
-    "commercial": "Showroomy a komerce",
-    "reconstructions": "Kompletní rekonstrukce"
+    "houses": "Domy"
   },
   "detail": {
     "about": "O projektu",
@@ -18,9 +15,7 @@
     "location": "Lokalita",
     "year": "Rok",
     "area": "Podlahová plocha",
-    "investor": "Investor",
-    "services": "Dodané služby",
-    "metrics": "Klíčová čísla",
+    "metrics": "Klíčové informace",
     "gallery": "Galerie projektu",
     "back": "Zpět na projekty",
     "imagesCount": "fotografií"

@@ -5,17 +5,17 @@
     "ctaPrimary": "View projects",
     "ctaSecondary": "Contact us",
     "meta": {
-      "projects": "20+ bespoke reconstructions delivered",
-      "subtitle": "Apartments • Family houses • Loft conversions",
+      "projects": "8+ bespoke reconstructions delivered",
+      "subtitle": "Apartments • Family houses",
       "caption": "Recent completion",
-      "location": "Vinohrady Residence"
+      "location": ""
     }
   },
   "team": {
     "kicker": "About us",
-    "title": "Precision led by Robert Šiška",
-    "subtitle": "With fifteen years of hands-on experience, Robert guides every project with a steady balance of architecture, engineering and craft.",
-    "description": "We partner with verified architects, suppliers and craftsmen to orchestrate renovations that feel effortless for the client. Weekly reporting, transparent costing and on-site supervision ensure every detail lands exactly as planned.",
+    "title": "Precision led by Robert Siska",
+    "subtitle": "With over 30 years of experience and a strong background in business and management, Robert and his team take pride in delivering complete customer satisfaction on every project, big or small.",
+    "description": "We partner with verified suppliers and craftsmen to orchestrate renovations that feel effortless for the client. Weekly reporting, transparent costing and on-site supervision ensure every detail lands exactly as planned.",
     "highlights": [
       "End-to-end project management with curated suppliers",
       "Architect and interior designer collaboration",
@@ -24,7 +24,7 @@
     ],
     "cta": "Discover more",
     "member": {
-      "role": "Founder & Project Lead"
+      "role": "Founder & CEO"
     }
   },
   "projects": {
@@ -35,7 +35,7 @@
   "contact": {
     "kicker": "Contact",
     "title": "Ready to start your renovation?",
-    "subtitle": "Call or email Robert Šiška to arrange a consultation, site visit or budgeting workshop.",
+    "subtitle": "Call or email Robert Siska to arrange a consultation, site visit or budgeting workshop.",
     "note": "Available weekdays 08:00–18:00 CET."
   }
 }

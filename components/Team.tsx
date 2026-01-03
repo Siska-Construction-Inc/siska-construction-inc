@@ -3,9 +3,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
+import { useAppLocale } from "@/lib/i18n/TranslationProvider";
+import { CONTACT_PERSON_CS, CONTACT_PERSON_EN } from "@/components/constants";
 
 export function Team() {
   const { t } = useTranslation("home");
+  const { locale } = useAppLocale();
+  const contactName = locale === "cs" ? CONTACT_PERSON_CS : CONTACT_PERSON_EN;
   const highlights = t("team.highlights", { returnObjects: true }) as string[];
 
   return (
@@ -14,7 +18,7 @@ export function Team() {
         <div className="relative overflow-hidden rounded-4xl border border-neutral-200 bg-white shadow-2xl shadow-neutral-900/10">
           <Image
             src="/team/robert.jpg"
-            alt="Portrait of Robert Šiška"
+            alt="Portrait of Robert Siska"
             width={640}
             height={720}
             className="h-full w-full object-cover"
@@ -24,7 +28,7 @@ export function Team() {
             <p className="text-sm font-semibold uppercase tracking-[0.3em] text-neutral-300">
               {t("team.member.role")}
             </p>
-            <p className="mt-1 text-lg font-semibold">Robert Šiška</p>
+            <p className="mt-1 text-lg font-semibold">{contactName}</p>
           </div>
         </div>
         <div className="space-y-6">
@@ -39,7 +43,7 @@ export function Team() {
               {t("team.subtitle")}
               <Link
                 href="/about"
-                className="ml-1 inline-flex items-center gap-2 text-sm font-semibold text-neutral-600 transition-colors duration-150 hover:text-neutral-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-400"
+                className="ml-1 inline-flex items-center gap-2 text-sm font-semibold text-neutral-600 transition-colors duration-150 hover:text-neutral-900 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-amber-400"
               >
                 {t("team.cta")}
                 <span aria-hidden>→</span>
