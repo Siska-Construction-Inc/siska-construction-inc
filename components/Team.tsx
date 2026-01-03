@@ -43,7 +43,7 @@ export function Team() {
               {t("team.subtitle")}
               <Link
                 href="/about"
-                className="ml-1 inline-flex items-center gap-2 text-sm font-semibold text-neutral-600 transition-colors duration-150 hover:text-neutral-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-400"
+                className="ml-1 inline-flex items-center gap-2 text-sm font-semibold text-neutral-600 transition-colors duration-150 hover:text-neutral-900 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-amber-400"
               >
                 {t("team.cta")}
                 <span aria-hidden>→</span>

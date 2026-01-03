@@ -60,9 +60,6 @@ export function Hero({ latestProject, translation }: { latestProject?: any; tran
               {latestProject && (
                 <div className="pointer-events-none absolute inset-0 bg-linear-to-t from-stone-900/80 via-transparent">
                   <div className="absolute bottom-6 left-6 right-6 space-y-2 text-stone-50">
-                    <span className="inline-flex rounded-full bg-white/15 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em]">
-                      {latestProject.location}
-                    </span>
                     <h3 className="text-2xl font-semibold leading-tight">
                       {translation?.name}
                     </h3>

@@ -1,0 +1,21 @@
+{
+  "name": "Maremma Lane",
+  "location": "9 Maremma Lane, Ladera Ranch, CA",
+  "year": "",
+  "area_m2": "",
+  "area_sqft": "6000",
+  "categories": ["houses"],
+  "featured": false,
+  "translations": {
+    "cs": {
+      "name": "9 Maremma Lane",
+      "summary": "Kompletní přestavba domu o rozloze 6 000 čtverečních stop (6 ložnic, 6,5 koupelen) v luxusní komunitě Ladera Ranch, CA.",
+      "description": "Kompletní přestavba domu o rozloze 6 000 čtverečních stop (6 ložnic, 6,5 koupelen) v luxusní komunitě Ladera Ranch, CA."
+    },
+    "en": {
+      "name": "9 Maremma Lane",
+      "summary": "Complete house remodeling of 6,000 sq ft home (6 bedrooms, 6.5 bathrooms) in luxurious community of Ladera Ranch CA.",
+      "description": "Complete house remodeling of 6,000 sq ft home (6 bedrooms, 6.5 bathrooms) in luxurious community of Ladera Ranch CA."
+    }
+  }
+}

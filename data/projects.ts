@@ -71,9 +71,9 @@ function loadProjectsFromPublic(): Project[] {
           coverImage,
           gallery,
           location: folder,
-          year: (meta && (meta as any).year) ?? sourceFromBase?.year ?? new Date().getFullYear(),
-          area: (meta && (meta as any).area) ?? sourceFromBase?.area ?? 0,
-          investor: (meta && (meta as any).investor) ?? sourceFromBase?.investor ?? "",
+          year: (meta && (meta as any).year) ?? sourceFromBase?.year ?? undefined,
+          area_m2: (meta && (meta as any).area_m2) ?? (meta && (meta as any).area) ?? sourceFromBase?.area_m2 ?? undefined,
+          area_sqft: (meta && (meta as any).area_sqft) ?? undefined,
           categories: (meta && (meta as any).categories) ?? sourceFromBase?.categories ?? [],
           featured: !!((meta && (meta as any).featured) ?? sourceFromBase?.featured),
           translations: translations as Record<any, any>,
@@ -105,17 +105,15 @@ export function getFeaturedProjects(limit = 3) {
 
   const desiredOrder = [
     "desert-west-drive",
-    "st-charles",
+    "saint-charles",
     "n-oakley",
   ];
 
   const orderedFeatured = desiredOrder
-    .map((id) => featuredProjects.find((p) => p.id === id))
-    .filter(Boolean) as typeof featuredProjects;
+    .map((id) => projects.find((p) => p.id === id))
+    .filter(Boolean) as Project[];
 
-  const remainingFeatured = featuredProjects.filter(
-    (p) => !desiredOrder.includes(p.id)
-  );
+  const remainingFeatured = featuredProjects.filter((p) => !desiredOrder.includes(p.id));
 
   const combined = [...orderedFeatured, ...remainingFeatured];
 
@@ -124,7 +122,7 @@ export function getFeaturedProjects(limit = 3) {
   const needed = limit - combined.length;
   const additional = [...projects]
     .filter((project) => !project.featured)
-    .sort((a, b) => b.year - a.year)
+    .sort((a, b) => (b.year ?? 0) - (a.year ?? 0))
     .slice(0, needed);
 
   return [...combined, ...additional].slice(0, limit);
@@ -132,7 +130,7 @@ export function getFeaturedProjects(limit = 3) {
 
 export function getLatestProjects(limit = 3) {
   return [...projects]
-    .sort((a, b) => b.year - a.year)
+    .sort((a, b) => (b.year ?? 0) - (a.year ?? 0))
     .slice(0, limit);
 }
 
@@ -140,7 +138,7 @@ export function getLatestProject(): Project | undefined {
   if (!projects || projects.length === 0) return undefined;
 
   return projects.reduce((latest, current) =>
-    current.year > latest.year ? current : latest
+    (current.year ?? 0) > (latest.year ?? 0) ? current : latest
   );
 }
 

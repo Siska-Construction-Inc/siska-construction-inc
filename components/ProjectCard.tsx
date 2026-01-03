@@ -26,6 +26,20 @@ export function ProjectCard({ project }: ProjectCardProps) {
     return project.translations[locale] ?? project.translations[defaultLocale];
   }, [locale, project]);
 
+  const yearLabel = project.year ? String(project.year) : null;
+  const areaLabel =
+    locale === "en"
+      ? project.area_sqft
+        ? `${project.area_sqft} sq ft`
+        : project.area_m2
+        ? `${project.area_m2} m²`
+        : null
+      : project.area_m2
+      ? `${project.area_m2} m²`
+      : project.area_sqft
+      ? `${project.area_sqft} sq ft`
+      : null;
+
   return (
     <Link href={`/projects/${project.id}`} className={cardClasses}>
       <div className={imageWrapperClasses}>
@@ -38,9 +52,6 @@ export function ProjectCard({ project }: ProjectCardProps) {
         />
         <div className={gradientOverlay} />
         <div className="absolute bottom-6 left-6 right-6 space-y-2 text-stone-50">
-          <span className="inline-flex rounded-full bg-white/15 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em]">
-            {project.location}
-          </span>
           <h3 className="text-2xl font-semibold leading-tight">
             {translation.name}
           </h3>
@@ -48,11 +59,13 @@ export function ProjectCard({ project }: ProjectCardProps) {
       </div>
       <div className="flex flex-1 flex-col gap-3 px-6 pb-6 pt-5 text-sm text-stone-600">
         <p>{translation.summary}</p>
-        <div className="mt-auto flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.3em] text-stone-400">
-          <span>{project.year}</span>
-          <span aria-hidden="true">•</span>
-          <span>{project.area} m²</span>
-        </div>
+        {(yearLabel || areaLabel) && (
+          <div className="mt-auto flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.3em] text-stone-400">
+            {yearLabel && <span>{yearLabel}</span>}
+            {yearLabel && areaLabel && <span aria-hidden="true">•</span>}
+            {areaLabel && <span>{areaLabel}</span>}
+          </div>
+        )}
       </div>
     </Link>
   );

@@ -1,0 +1,21 @@
+{
+  "name": "Lake Shore Drive",
+  "location": "474 Lake Shore Drive, Chicago",
+  "year": "",
+  "area_m2": "",
+  "area_sqft": "",
+  "categories": ["apartments"],
+  "featured": false,
+  "translations": {
+    "cs": {
+      "name": "474 Lake Shore Drive",
+      "summary": "Rekonstrukce koupelny v luxusním chicagském výškovém domě.",
+      "description": "Rekonstrukce koupelny v luxusním chicagském výškovém domě."
+    },
+    "en": {
+      "name": "474 Lake Shore Drive",
+      "summary": "Bathroom remodeling in luxurious Chicago hi-rise.",
+      "description": "Bathroom remodeling in luxurious Chicago hi-rise."
+    }
+  }
+}

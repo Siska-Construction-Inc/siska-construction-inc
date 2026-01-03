@@ -1,31 +1,21 @@
 {
   "name": "Dardenia",
-  "location": "Dardenia",
-  "year": 2023,
-  "area": 140,
-  "investor": "Soukromý investor",
-  "categories": ["houses", "reconstructions"],
+  "location": "24622 Dardenia, Mission Viejo, CA",
+  "year": "",
+  "area_m2": "",
+  "area_sqft": "",
+  "categories": ["houses"],
   "featured": true,
   "translations": {
     "cs": {
-      "name": "Dardenia",
-      "summary": "Komplexní rekonstrukce rodinného domu s důrazem na přírodní materiály a denní světlo.",
-      "description": "Dům jsme proměnili do současné podoby s otevřenou denní částí, přírodními dřevěnými obklady a citlivou integrací technologií.",
-      "scope": [
-        "Stavební úpravy a zateplení",
-        "Interiérové práce a truhlářství",
-        "Energetické řešení a řízení domu"
-      ]
+      "name": "24622 Dardenia",
+      "summary": "Rekonstrukce domu v Mission Viejo, CA.",
+      "description": "Rekonstrukce domu v Mission Viejo, CA."
     },
     "en": {
-      "name": "Dardenia",
-      "summary": "A full family house refurbishment focused on natural materials and daylight.",
-      "description": "We transformed the house into a contemporary home with an open living area, timber cladding and carefully integrated systems.",
-      "scope": [
-        "Structural modifications and insulation",
-        "Interior works and bespoke joinery",
-        "Energy systems and home controls"
-      ]
+      "name": "24622 Dardenia",
+      "summary": "House remodeling in Mission Viejo CA.",
+      "description": "House remodeling in Mission Viejo CA."
     }
   }
 }
