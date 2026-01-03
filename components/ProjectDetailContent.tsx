@@ -71,7 +71,7 @@ export function ProjectDetailContent({ project }: ProjectDetailContentProps) {
               </ul>
             </div>
           </div>
-          <aside className="rounded-4xl border border-neutral-200 bg-neutral-50 p-6 shadow-sm shadow-neutral-900/10">
+          <aside className="self-start rounded-4xl border border-neutral-200 bg-neutral-50 p-6 shadow-sm shadow-neutral-900/10">
             <p className="text-sm font-semibold uppercase tracking-[0.3em] text-neutral-500">
               {t("projects:detail.metrics")}
             </p>
@@ -88,17 +88,7 @@ export function ProjectDetailContent({ project }: ProjectDetailContentProps) {
                 <dt className="text-neutral-500">{t("projects:detail.area")}</dt>
                 <dd className="text-right font-semibold text-neutral-900">{project.area} m²</dd>
               </div>
-              <div className="flex items-center justify-between gap-4">
-                <dt className="text-neutral-500">{t("projects:detail.investor")}</dt>
-                <dd className="text-right font-semibold text-neutral-900">{project.investor}</dd>
-              </div>
             </dl>
-            <div className="mt-6 space-y-2 text-xs uppercase tracking-[0.3em] text-neutral-500">
-              <p>{t("projects:detail.services")}</p>
-              <p className="font-semibold text-neutral-900">
-                {project.categories.map((category) => t(`filters.${category}` as const)).join(" · ")}
-              </p>
-            </div>
           </aside>
         </section>
 

@@ -2,10 +2,7 @@ import type { Locale } from "@/lib/i18n/settings";
 
 export type ProjectCategory =
   | "apartments"
-  | "houses"
-  | "lofts"
-  | "commercial"
-  | "reconstructions";
+  | "houses";
 
 export type ProjectTranslation = {
   name: string;

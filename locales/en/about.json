@@ -1,72 +1,57 @@
 {
   "hero": {
     "kicker": "About us",
-    "title": "We steer renovations with precision and care",
-    "description": "From the first sketch to the final walkthrough, we orchestrate architecture, engineering and craft so the result feels effortless."
+    "title": "Founded in Chicago in 1997",
+    "description": "Founded in Chicago in 1997, the company became a leader in new home construction and home remodeling through a commitment to quality craftsmanship. See the Projects page for the full list of projects."
   },
   "essence": [
     {
-      "title": "Full-spectrum coordination",
-      "text": "Every phase has a dedicated lead and clear milestones, so clients always know what comes next."
+      "title": "Customer-first philosophy",
+      "text": "We are guided by a customer-first philosophy and are committed to outstanding workmanship, excellent service, and complete customer satisfaction on every project."
     },
     {
-      "title": "Transparent process",
-      "text": "Weekly reports, detailed budgets and on-site supervision keep every project grounded."
+      "title": "Craftsmanship & scope",
+      "text": "Expertise includes custom kitchens and bathrooms, all types of flooring, and a full range of exterior work."
     },
     {
-      "title": "Crafted execution",
-      "text": "Our in-house joinery and trusted partners let us realize bespoke details with confidence."
+      "title": "Efficiency & lighting",
+      "text": "We provide energy-efficient solutions and LED lighting as part of our remodeling services."
     }
   ],
   "essenceHeading": "Our approach",
-  "teamHeading": "Extended team",
-  "teamDescription": "These specialists bring design, technical direction and client care so you feel supported behind the scenes.",
+  "teamHeading": "Team",
+  "teamDescription": "Founded by Robert Siska, the company and its dedicated team provide exceptional service built on experience, integrity, superior craftsmanship, and strong customer relationships.",
   "team": {
     "kicker": "Team",
-    "subtitle": "With fifteen years of hands-on experience, Robert guides every project with a steady balance of architecture, engineering and craft.",
+    "subtitle": "With over 30 years of experience and a strong background in business and management, Robert and his team take pride in delivering complete customer satisfaction on every project, big or small.",
     "member": {
-      "role": "Founder & Project Lead"
+      "role": "Founder & CEO"
     }
   },
   "teamMembers": [
     {
-      "name": "Marta Vávrová",
-      "role": "Lead interior designer",
-      "bio": "Marta sets material palettes, curates styling and develops detailed visualizations for every phase."
-    },
-    {
-      "name": "Ondřej Dvořák",
-      "role": "Technical director",
-      "bio": "He oversees engineering, structural reviews and budgets to make sure the concept is buildable."
-    },
-    {
-      "name": "Elena Křížová",
-      "role": "Client experience lead",
-      "bio": "Elena manages client communication, schedules walkthroughs and keeps the process calm and transparent."
+      "name": "Robert Siska",
+      "role": "Founder & CEO",
+      "bio": "With over 30 years of experience and a strong background in business and management, Robert and his team take pride in delivering complete customer satisfaction on every project, big or small."
     }
   ],
   "historyHeading": "Company history",
-  "historyIntro": "Every milestone has shaped the studio into an unwavering partner for complex renovations.",
+  "historyIntro": "Throughout our history, our customer base has grown primarily through repeat clients, referrals, and long-term satisfaction with our work.",
   "history": [
     {
-      "year": "2009",
-      "title": "Studio founded",
-      "description": "Robert Šiška launched the practice, weaving architectural intent with craftsmanship."
+      "year": "1997",
+      "title": "Founded in Chicago",
+      "description": "Founded in Chicago in 1997, the company quickly became a leader in new home construction and home remodeling through a commitment to quality craftsmanship."
     },
     {
-      "year": "2013",
-      "title": "In-house workshop",
-      "description": "Adding a joinery workshop gave control over bespoke furniture, millwork and finishes."
+      "year": "2019",
+      "title": "Expanded to Southern California",
+      "description": "In 2019 the company expanded to Southern California while continuing to serve customers throughout the Chicagoland area."
     },
     {
-      "year": "2018",
-      "title": "Prague milestone projects",
-      "description": "Over twenty luxury apartment renovations were delivered with dedicated artistic oversight."
-    },
-    {
-      "year": "2023",
-      "title": "Chicago collaboration",
-      "description": "European expertise joined forces with modern American craftsmanship, expanding our lens internationally."
+      "year": "All day long",
+      "title": "Our commitment",
+      "description": "We are committed to outstanding workmanship, excellent service, and complete customer satisfaction on every project."
     }
   ]
 }

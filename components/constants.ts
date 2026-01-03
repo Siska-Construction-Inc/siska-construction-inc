@@ -9,7 +9,8 @@ export const MAIL_BODY_EN = encodeURIComponent(
   "Hello,\n\nI would like to inquire about a renovation. Please get back to me with a proposed time for a consultation.\n\nThank you and have a great day,\n",
 );
 
-export const CONTACT_PERSON = "Robert Šiška";
+export const CONTACT_PERSON_CS = "Robert Šiška";
+export const CONTACT_PERSON_EN = "Robert Siska";
 
 export const PHONE_DISPLAY_CS = "+420 737 340 795";
 export const PHONE_HREF_CS = "tel:+420737340795";

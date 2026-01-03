@@ -7,10 +7,7 @@
   "filters": {
     "all": "All",
     "apartments": "Apartments",
-    "houses": "Houses",
-    "lofts": "Lofts",
-    "commercial": "Showrooms & commercial",
-    "reconstructions": "Full reconstructions"
+    "houses": "Houses"
   },
   "detail": {
     "about": "About the project",
@@ -18,9 +15,7 @@
     "location": "Location",
     "year": "Year",
     "area": "Floor area",
-    "investor": "Client",
-    "services": "Delivered services",
-    "metrics": "Key figures",
+    "metrics": "Key information",
     "gallery": "Project gallery",
     "back": "Back to projects",
     "imagesCount": "images"

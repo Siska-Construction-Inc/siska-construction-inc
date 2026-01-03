@@ -103,17 +103,31 @@ export function getProjectsForLocale(locale: Locale) {
 export function getFeaturedProjects(limit = 3) {
   const featuredProjects = projects.filter((project) => project.featured);
 
-  if (featuredProjects.length >= limit) {
-    return featuredProjects.slice(0, limit);
-  }
+  const desiredOrder = [
+    "desert-west-drive",
+    "st-charles",
+    "n-oakley",
+  ];
 
-  const needed = limit - featuredProjects.length;
+  const orderedFeatured = desiredOrder
+    .map((id) => featuredProjects.find((p) => p.id === id))
+    .filter(Boolean) as typeof featuredProjects;
+
+  const remainingFeatured = featuredProjects.filter(
+    (p) => !desiredOrder.includes(p.id)
+  );
+
+  const combined = [...orderedFeatured, ...remainingFeatured];
+
+  if (combined.length >= limit) return combined.slice(0, limit);
+
+  const needed = limit - combined.length;
   const additional = [...projects]
     .filter((project) => !project.featured)
     .sort((a, b) => b.year - a.year)
     .slice(0, needed);
 
-  return [...featuredProjects, ...additional].slice(0, limit);
+  return [...combined, ...additional].slice(0, limit);
 }
 
 export function getLatestProjects(limit = 3) {

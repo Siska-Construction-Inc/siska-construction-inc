@@ -5,17 +5,17 @@
     "ctaPrimary": "Prohlédnout projekty",
     "ctaSecondary": "Kontaktujte nás",
     "meta": {
-      "projects": "20+ realizovaných rekonstrukcí",
-      "subtitle": "Byty • Rodinné domy • Lofty",
+      "projects": "8+ realizovaných rekonstrukcí",
+      "subtitle": "Byty • Rodinné domy",
       "caption": "Aktuálně dokončeno",
-      "location": "Rezidence Vinohrady"
+      "location": ""
     }
   },
   "team": {
     "kicker": "O nás",
     "title": "Přesnost pod vedením Roberta Šišky",
-    "subtitle": "Již patnáct let vede Robert projekty, které spojují architekturu, techniku a řemeslo do jednoho funkčního celku.",
-    "description": "Spolupracujeme s prověřenými architekty, dodavateli i řemeslníky a klientům předáváme rekonstrukce bez zbytečných starostí. Týdenní reporty, transparentní náklady a autorský dozor drží každý detail pod kontrolou.",
+    "subtitle": "S více než 30 lety zkušeností a silným zázemím v obchodě a managementu se Robert a jeho tým pyšní úplnou spokojeností zákazníků u každého projektu, velkého i malého.",
+    "description": "Spolupracujeme s prověřenými dodavateli i řemeslníky a klientům předáváme rekonstrukce bez zbytečných starostí. Týdenní reporty, transparentní náklady a autorský dozor drží každý detail pod kontrolou.",
     "highlights": [
       "Kompletní řízení zakázek s ověřenými dodavateli",
       "Spolupráce s architekty a interiérovými designéry",
@@ -24,7 +24,7 @@
     ],
     "cta": "Dozvědět se více",
     "member": {
-      "role": "Zakladatel & projektový vedoucí"
+      "role": "Zakladatel a ředitel"
     }
   },
   "projects": {
