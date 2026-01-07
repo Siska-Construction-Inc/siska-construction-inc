@@ -81,7 +81,7 @@ export function Header() {
               aria-label={t(`language.switch` as const)}
               className={`${languageButtonClasses} border-neutral-200 bg-white text-neutral-600 hover:border-neutral-400 hover:text-neutral-900 flex items-center gap-2`}
             >
-              <Flag code={locale === "cs" ? "cs" : "en"} />
+              <Flag code={otherLocale as "cs" | "en"} />
             </button>
           </div>
           <a href="#contact" className={`${actionButtonClasses} hidden md:inline-flex`}>
@@ -125,7 +125,7 @@ export function Header() {
               aria-label={t(`language.switch` as const)}
               className={`${languageButtonClasses} border-neutral-200 bg-white text-neutral-600 hover:border-neutral-400 hover:text-neutral-900`}
             >
-              <Flag code={locale === "cs" ? "cs" : "en"} />
+              <Flag code={otherLocale as "cs" | "en"} />
             </button>
             <a
               href="#contact"

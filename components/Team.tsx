@@ -21,11 +21,14 @@ export function Team() {
             alt="Portrait of Robert Siska"
             width={640}
             height={720}
-              className="h-80 w-full object-cover"
+            className="h-full w-full object-cover"
             priority
           />
-          <div className="absolute left-6 right-6 bottom-6 rounded-3xl border border-white/20 bg-neutral-900/90 px-6 py-4 text-neutral-100 shadow-lg">
-            <p className="text-sm text-neutral-100">{t("team.member.role")}</p>
+          <div className="absolute inset-x-6 bottom-6 rounded-3xl border border-white/20 bg-neutral-900/90 px-6 py-4 text-neutral-100 shadow-lg">
+            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-neutral-300">
+              {t("team.member.role")}
+            </p>
+            <p className="mt-1 text-lg font-semibold">{contactName}</p>
           </div>
         </div>
         <div className="space-y-6">
