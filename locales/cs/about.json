@@ -32,7 +32,15 @@
     {
       "name": "Robert Šiška",
       "role": "Zakladatel a ředitel",
+      "image": "robert.jpg",
       "bio": "S více než 30 lety zkušeností a silným zázemím v obchodě a managementu se Robert a jeho tým pyšní tím, že dodávají úplnou spokojenost zákazníků u každého projektu, velkého i malého."
+    }
+    ,
+    {
+      "name": "Erick Bonilla",
+      "role": "Projektový manažer, divize Kalifornie",
+      "image": "erick.jpg",
+      "bio": "Projektový manažer s víceletou zkušeností v řízení projektů v Kalifornii, odpovědný za koordinaci a kvalitu stavebních prací."
     }
   ],
   "historyHeading": "Historie společnosti",

@@ -14,6 +14,7 @@ type TeamMember = {
   name: string;
   role: string;
   bio: string;
+  image?: string;
 };
 
 type HistoryItem = {
@@ -95,8 +96,18 @@ export default function AboutPage() {
           <div className="flex flex-wrap justify-center gap-6">
             {teamMembers.map((member) => (
               <article key={member.name} className="basis-full sm:basis-1/2 md:basis-1/3 max-w-sm rounded-3xl border border-neutral-200 bg-neutral-50 p-6 shadow-sm shadow-neutral-900/5">
-                <p className="text-xs font-semibold uppercase tracking-[0.3em] text-neutral-500">{member.role}</p>
-                <h3 className="mt-2 text-xl font-semibold text-neutral-900">{member.name}</h3>
+                <div className="relative overflow-hidden rounded-2xl">
+                  <Image
+                    src={`/team/${member.image ?? 'robert.jpg'}`}
+                    alt={member.name}
+                    width={800}
+                    height={1080}
+                    className="h-64 md:h-80 w-full object-cover"
+                    priority={false}
+                  />
+                </div>
+                <h3 className="mt-4 text-xl font-semibold text-neutral-900">{member.name}</h3>
+                <p className="mt-3 text-sm font-semibold uppercase tracking-[0.3em] text-neutral-500">{member.role}</p>
                 <p className="mt-3 text-sm text-neutral-600">{member.bio}</p>
               </article>
             ))}

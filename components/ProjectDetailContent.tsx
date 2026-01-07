@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useMemo } from "react";
+import { useMemo, useState, useEffect, useCallback } from "react";
 import { useTranslation } from "react-i18next";
 import type { Project } from "@/components/types";
 import { useAppLocale } from "@/lib/i18n/TranslationProvider";
@@ -21,6 +21,48 @@ export function ProjectDetailContent({ project }: ProjectDetailContentProps) {
   const translation = useMemo(() => {
     return project.translations[locale] ?? project.translations[defaultLocale];
   }, [locale, project]);
+
+  const [isOpen, setIsOpen] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const openGallery = useCallback((index: number) => {
+    setCurrentIndex(index);
+    setIsOpen(true);
+  }, []);
+
+  const closeGallery = useCallback(() => setIsOpen(false), []);
+
+  const next = useCallback(() => {
+    setCurrentIndex((i) => (project.gallery.length ? (i + 1) % project.gallery.length : i));
+  }, [project.gallery.length]);
+
+  const prev = useCallback(() => {
+    setCurrentIndex((i) => (project.gallery.length ? (i - 1 + project.gallery.length) % project.gallery.length : i));
+  }, [project.gallery.length]);
+
+  useEffect(() => {
+    if (!isOpen) return;
+
+    function onKey(e: KeyboardEvent) {
+      if (e.key === "ArrowRight") next();
+      if (e.key === "ArrowLeft") prev();
+      if (e.key === "Escape") closeGallery();
+    }
+
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [isOpen, next, prev, closeGallery]);
+
+  useEffect(() => {
+    if (!isOpen) return;
+
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      document.body.style.overflow = previousOverflow || "";
+    };
+  }, [isOpen]);
 
   const locationLabel = project.location || null;
   const yearLabel = project.year ?? null;
@@ -133,23 +175,84 @@ export function ProjectDetailContent({ project }: ProjectDetailContentProps) {
 
               return rows.map((row, rowIndex) => (
                 <div key={rowIndex} className={`flex gap-4 ${row.length === 1 ? "justify-center" : ""}`}>
-                  {row.map((image) => (
-                    <div key={image} className="relative h-72 overflow-hidden rounded-3xl bg-neutral-100 flex-1 min-w-0">
-                      <Image
-                        src={image}
-                        alt={`${translation.name} photo`}
-                        fill
-                        className="object-cover transition duration-500 hover:scale-105"
-                        sizes="(max-width: 768px) 100vw, 50vw"
-                      />
-                    </div>
-                  ))}
+                  {row.map((image, idx) => {
+                    const globalIndex = rowIndex * 2 + idx;
+                    return (
+                      <button
+                        key={image}
+                        type="button"
+                        onClick={() => openGallery(globalIndex)}
+                        className="relative h-72 overflow-hidden rounded-3xl bg-neutral-100 flex-1 min-w-0"
+                        aria-label={`Open image ${globalIndex + 1} of ${project.gallery.length}`}
+                      >
+                        <Image
+                          src={image}
+                          alt={`${translation.name} photo ${globalIndex + 1}`}
+                          fill
+                          className="object-cover transition duration-500 hover:scale-105"
+                          sizes="(max-width: 768px) 100vw, 50vw"
+                        />
+                      </button>
+                    );
+                  })}
                 </div>
               ));
             })()}
           </div>
         </section>
       </div>
+
+      {/** Gallery lightbox modal */}
+      {isOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-sm">
+          <div
+            className="absolute inset-0 pointer-events-auto"
+            aria-hidden
+          />
+
+          <div className="relative z-10 mx-4 w-[80vw] h-[80vh] max-w-[95vw] max-h-[95vh]">
+            <div className="relative flex items-center justify-center rounded-2xl bg-white/94  p-4 shadow-2xl h-full">
+              <button
+                type="button"
+                onClick={prev}
+                className="absolute left-3 top-1/2 -translate-y-1/2 inline-flex h-12 w-12 items-center justify-center rounded-full bg-white/90 shadow-md hover:bg-white"
+                aria-label="Previous image"
+              >
+                ‹
+              </button>
+
+              <div className="mx-6 w-full h-full overflow-hidden rounded">
+                <Image
+                  src={project.gallery[currentIndex]}
+                  alt={`${translation.name} photo ${currentIndex + 1}`}
+                  width={1600}
+                  height={1200}
+                  className="h-full w-full object-contain"
+                  priority
+                />
+              </div>
+
+              <button
+                type="button"
+                onClick={next}
+                className="absolute right-3 top-1/2 -translate-y-1/2 inline-flex h-12 w-12 items-center justify-center rounded-full bg-white/90 shadow-md hover:bg-white"
+                aria-label="Next image"
+              >
+                ›
+              </button>
+
+              <button
+                type="button"
+                onClick={closeGallery}
+                className="absolute right-3 top-3 inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/90 shadow-md hover:bg-white"
+                aria-label="Close gallery"
+              >
+                ✕
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </article>
   );
 }

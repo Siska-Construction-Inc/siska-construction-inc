@@ -32,7 +32,15 @@
     {
       "name": "Robert Siska",
       "role": "Founder & CEO",
+      "image": "robert.jpg",
       "bio": "With over 30 years of experience and a strong background in business and management, Robert and his team take pride in delivering complete customer satisfaction on every project, big or small."
+    }
+    ,
+    {
+      "name": "Erick Bonilla",
+      "role": "Project Manager, California Division",
+      "image": "erick.jpg",
+      "bio": "Project Manager with several years of experience managing projects in California, responsible for coordinating work and ensuring construction quality."
     }
   ],
   "historyHeading": "Company history",

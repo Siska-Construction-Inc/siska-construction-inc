@@ -15,5 +15,5 @@ export const CONTACT_PERSON_EN = "Robert Siska";
 export const PHONE_DISPLAY_CS = "+420 737 340 795";
 export const PHONE_HREF_CS = "tel:+420737340795";
 
-export const PHONE_DISPLAY_EN = "+1 xxx xxx xxxx";
-export const PHONE_HREF_EN = "tel:+1xxxxxxxxxx";
+export const PHONE_DISPLAY_EN = "+1 773 617 4390";
+export const PHONE_HREF_EN = "tel:+17736174390";
