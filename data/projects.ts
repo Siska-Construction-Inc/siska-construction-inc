@@ -104,9 +104,9 @@ export function getFeaturedProjects(limit = 3) {
   const featuredProjects = projects.filter((project) => project.featured);
 
   const desiredOrder = [
+    "glen-ellyn",
+    "maremma-lane",
     "desert-west-drive",
-    "saint-charles",
-    "n-oakley",
   ];
 
   const orderedFeatured = desiredOrder

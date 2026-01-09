@@ -10,7 +10,7 @@
     "viewProject": "View project"
   },
   "footer": {
-    "rights": "© {{year}} Siska Construction Inc. All rights reserved.",
+    "rights": "© 2018 - {{year}} Siska Construction Inc. All rights reserved.",
     "crafted": "Website crafted by"
   },
   "contact": {
