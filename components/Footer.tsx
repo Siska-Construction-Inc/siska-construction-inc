@@ -43,7 +43,7 @@ export function Footer() {
           <p>
             {t("footer.crafted")} {" "}
             <Link
-              href="https://github.com/ZurekMartin"
+              href="https://www.zurekmartin.cz"
               className={linkClasses}
               target="_blank"
               rel="noreferrer"
